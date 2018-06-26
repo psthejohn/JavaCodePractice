@@ -11,16 +11,19 @@ public class MatrixDiagonalDifference {
 	@SuppressWarnings("resource")
 	public void enterMatrix() {
 
+		// Inputs number of rows of a Matrix from user
 		Scanner input1 = new Scanner(System.in);
 		System.out.println("Enter number of rows");
 		int rowNumber = input1.nextInt();
-
+		
+		// Inputs number of columns of a Matrix from user
 		Scanner input2 = new Scanner(System.in);
 		System.out.println("Enter number of columns");
 		int colNumber = input2.nextInt();
 
 		int matrix[][] = new int[rowNumber][colNumber];
 
+		// Inputing elements of Matrix
 		for (int i = 0; i < rowNumber; i++) {
 			System.out.println("");
 			for (int j = 0; j < colNumber; j++) {
@@ -31,7 +34,7 @@ public class MatrixDiagonalDifference {
 		}
 
 		System.out.println("\n" + "---------------------------- Matrix is -------------------------" + "\n");
-
+		//Displaying Matrix
 		for (int i = 0; i < rowNumber; i++) {
 			for (int j = 0; j < colNumber; j++) {
 				System.out.print(" " +matrix[i][j] + "  ");
@@ -41,10 +44,13 @@ public class MatrixDiagonalDifference {
 
 		int sumLeftDiagonalElements = 0;
 		int sumRightDiagonalElements = 0;
-
+		
+		// Checks if a Square Matrix, Hence Proceeds to Calculate Difference of sum of Diagonal Elements of a Matrix
 		if (rowNumber == colNumber) {
+			// Selects Left Diagonal elements in this format --> \  of a Matrix
 			for (int i = 0; i < rowNumber; i++) {
 				for (int j = 0; j < colNumber; j++) {
+					// Adds Left Diagonal side of Matrix Elements
 					if (i == j) {
 						sumLeftDiagonalElements += matrix[i][j];
 						// System.out.println("Left Elements selected" + matrix[i][j]);
@@ -52,6 +58,8 @@ public class MatrixDiagonalDifference {
 				}
 			}
 			// System.out.println("Sum of Left Elements --- " + sumLeftElements);
+			
+			// Selects Right Diagonal elements in this format --> /  of a Matrix
 			for (int i = 0; i < rowNumber; i++) {
 				int temp = 0;
 				for (int j = colNumber - i; j > 0; j--) {
@@ -59,10 +67,12 @@ public class MatrixDiagonalDifference {
 						temp = j - 1;
 					}
 				}
+				// Adds Right Diagonal side of Matrix Elements
 				sumRightDiagonalElements += matrix[i][temp];
 
 			}
 			System.out.print("\n" + "-> Difference is :: ");
+			// Checks to never print a negative value 
 			if (sumRightDiagonalElements > sumLeftDiagonalElements) {
 				System.out.println(sumRightDiagonalElements - sumLeftDiagonalElements);
 			} else if (sumRightDiagonalElements < sumLeftDiagonalElements) {
@@ -71,7 +81,9 @@ public class MatrixDiagonalDifference {
 				System.out.println("0, Since Both Numbers");
 			}
 
-		} else {
+		}
+		// If not a Square Matrix, then can't calculate differece of sum of Diagonal Elements of a Matrix
+		else {
 			System.out.println("\n" + "Can Not Calculate Difference/Determinant for Rows not Equal to Columns"
 					+ "  !! Only Valid for Square Matrices !!");
 		}
