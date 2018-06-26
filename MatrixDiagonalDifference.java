@@ -24,8 +24,16 @@ public class MatrixDiagonalDifference {
 			try {
 				System.out.println("Enter number of rows");
 				a = input1.nextInt();
-				check1 = true;
-			} catch (InputMismatchException e) {
+				if (a > 0) {
+					check1 = true;
+				} else if (a == 0) {
+					System.out.println("Hey!! how can the rows be 0 man ");
+					check1 = false;
+				} else {
+					System.out.println("Hey!! how can the rows be negative man ");
+					check1 = false;
+				}
+			} catch (NegativeArraySizeException | InputMismatchException e) {
 				// input1.next();
 				System.out.println("> i Doubt if  '" + input1.next().toUpperCase() + "' is a number, Let's try again ");
 			}
@@ -36,12 +44,21 @@ public class MatrixDiagonalDifference {
 			try {
 				System.out.println("Enter number of columns");
 				b = input2.nextInt();
-				check2 = true;
+				if (b > 0) {
+					check2 = true;
+				} else if (b == 0) {
+					System.out.println("Hey!! how can the columns be 0 man ");
+					check2 = false;
+				} else {
+					System.out.println("Hey!! how can the columns be negative man ");
+					check2 = false;
+				}
 			} catch (InputMismatchException e) {
 				// input2.next();
 				System.out.println("> i Doubt if  '" + input2.next().toUpperCase() + "' is a number, Let's try again ");
 			}
 		}
+
 		int rowNumber = a;
 		int colNumber = b;
 		int matrix[][] = new int[rowNumber][colNumber];
