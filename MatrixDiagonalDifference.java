@@ -76,7 +76,7 @@ public class MatrixDiagonalDifference {
 			} else if (sumRightDiagonalElements < sumLeftDiagonalElements) {
 				System.out.println(sumLeftDiagonalElements - sumRightDiagonalElements);
 			} else if (sumLeftDiagonalElements == sumRightDiagonalElements) {
-				System.out.println("0, Since Both Numbers");
+				System.out.println(sumLeftDiagonalElements - sumRightDiagonalElements+", Both Diagonal have Equal values");
 			}
 
 		}
