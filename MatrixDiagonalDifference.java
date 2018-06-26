@@ -1,5 +1,3 @@
-package com.practice.office.matrix;
-
 import java.util.Scanner;
 
 /*
