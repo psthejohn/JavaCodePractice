@@ -16,3 +16,18 @@ EXPECTED OUTPUT  :  B B, NICE GIRL!
 Output 1         :   VERY GOOD PERSON !!
 
 Output 2         :  B B, NICE GIRL!
+
+
+# PrimeFactorsInteger
+
+```sh
+Input : 35
+
+Output : 
+--------- ALL FACTORS ----------
+1 X 35 = 35
+5 X 7 = 35
+--------- PRIME FACTORS ----------
+5 X 7 = 35
+
+```
