@@ -57,7 +57,7 @@ Output :
 
 ```
 # StringCapsDeleteA.java
-### Statement : 
+### Statement : You have to remove all 'A' characters from the String.
 ```sh
 Input :
 FIRST INPUT      :  a very good person !!
