@@ -1,25 +1,50 @@
-# JavaCodePractice
-Java Single Class Codes Here --  Included with main methods, simpler and easier to run 
+# MatrixDiagonalDifference.java
+### Statement : Calculate Difference of Sum of Diagonal elements of a Matrix.
+```sh
+Input : 
+----------------------- Taking Inputs as Matrix ---------------------
+Enter number of rows
+3
+Enter number of columns
+3
 
-#### StringCapsDeleteA.java
-https://github.com/psthejohn/JavaCodePractice/blob/master/StringCapsDeleteA.java
+ You have created a 3x3 Matrix
 
- ###### RESULT -   
-FIRST INPUT      :  a very good person !!
- 
-EXPECTED OUTPUT  :  VERY GOOD PERSON
+Now Lets Input Values
 
-SECOND INPUT     :  baa baa, nice girl!
+Enter element (0,0) : 
+1
+Enter element (0,1) : 
+2
+Enter element (0,2) : 
+3
 
-EXPECTED OUTPUT  :  B B, NICE GIRL!
+Enter element (1,0) : 
+4
+Enter element (1,1) : 
+5
+Enter element (1,2) : 
+6
 
-Output 1         :   VERY GOOD PERSON !!
+Enter element (2,0) : 
+7
+Enter element (2,1) : 
+8
+Enter element (2,2) : 
+9
 
-Output 2         :  B B, NICE GIRL!
 
+Output : 
+---------------------------- Matrix is -------------------------
 
-# PrimeFactorsInteger
+ 1   2   3  
+ 4   5   6  
+ 7   8   9  
 
+-> Difference is :: 0, Both Diagonal have Equal values
+```
+# PrimeFactorsInteger.java
+### Statement : You have to calculate all the prime factors of an integer.
 ```sh
 Input : 35
 
@@ -30,4 +55,18 @@ Output :
 --------- PRIME FACTORS ----------
 5 X 7 = 35
 
+```
+# StringCapsDeleteA.java
+### Statement : 
+```sh
+Input :
+FIRST INPUT      :  a very good person !!
+EXPECTED OUTPUT  :  VERY GOOD PERSON
+
+SECOND INPUT     :  baa baa, nice girl!
+EXPECTED OUTPUT  :  B B, NICE GIRL!
+
+Output : 
+Output 1         :   VERY GOOD PERSON !!
+Output 2         :  B B, NICE GIRL!
 ```
