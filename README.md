@@ -70,3 +70,12 @@ Output :
 Output 1         :   VERY GOOD PERSON !!
 Output 2         :  B B, NICE GIRL!
 ```
+
+# RemoveImmediateDuplicateString.java
+### Statement : You have to remove immediate occuring same characters from a string
+```sh
+Input :
+abccc
+Output : 
+ab
+```
